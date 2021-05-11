@@ -1,0 +1,84 @@
+body {
+  background: #0c0a9a;
+  color: white;
+  text-align: center;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 85vw;
+  max-width: 400px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.keyPad {
+  width: 70px;
+  height: 70px;
+  margin: 8px 16px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #130fd1, #0f0cc7);
+  box-shadow: 20px 20px 60px #09087a, -20px -20px 60px #0d0aa6;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  transition: box-shadow 1s;
+}
+
+.keyPad:focus-within {
+  background: linear-gradient(145deg, #19178f, #0f0cc7);
+}
+.keyPad:hover {
+  box-shadow: 2px 2px 14px #4a48d1;
+}
+
+.deletePad {
+  width: 70px;
+  height: 70px;
+  margin: 8px 16px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #d10f2f, #940a0a);
+  box-shadow: 20px 20px 60px #09087a, -20px -20px 60px #0d0aa6;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  transition: box-shadow 1s;
+}
+
+.deletePad:focus-within {
+  background: linear-gradient(145deg, #5c0220, #5c0222);
+}
+.deletePad:hover {
+  box-shadow: 2px 2px 14px #d1486a;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#numPad {
+  height: 30px;
+  margin-bottom: 24px;
+  border-radius: 9px;
+  padding: 3px;
+  font-size: 1.5rem;
+}
+
+.submit {
+  width: 120px;
+  height: 80px;
+  margin: 12px 12px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #0fd149, #2eda45);
+  box-shadow: 20px 20px 60px #09087a, -20px -20px 60px #0d0aa6;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  transition: box-shadow 1s;
+}
+
+.submit:focus {
+  background: linear-gradient(145deg, #10a13c, #13a827);
+}

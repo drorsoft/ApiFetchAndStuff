@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Tracker</title>
+  </head>
+  <body>
+    <h1>התקציב המשותף</h1>
+    <h2 id="name"></h2>
+    <input type="number" id="numPad" />
+    <div class="flexContainer">
+      <button class="keyPad">1</button><button class="keyPad">2</button
+      ><button class="keyPad">3</button><button class="keyPad">4</button
+      ><button class="keyPad">5</button><button class="keyPad">6</button
+      ><button class="keyPad">7</button><button class="keyPad">8</button
+      ><button class="keyPad">9</button><button class="keyPad hide"></button
+      ><button class="keyPad">0</button><button class="deletePad">Del</button>
+    </div>
+    <div>
+      <input
+        type="text"
+        id="numPad"
+        placeholder="בעבור מה יצא כסף"
+        style="direction: rtl"
+      />
+      <br />
+      <input
+        type="text"
+        id="numPad"
+        placeholder="קטגורייה"
+        style="direction: rtl"
+      />
+      <br />
+      <button class="submit">הזן הוצאה</button>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  <script src="api.js"></script>
+</html>
